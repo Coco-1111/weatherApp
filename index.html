@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="./script.js"></script>
-</head>
-<body>
-    <div class = "navbar"><h1>Weather Dashboard</h1></div>
-      <div class = "card">
-        <div class = "search">
-            <input type = "text" class = "search-bar">
-            <button>search</button>
-        </div>
-        <div class = "weather">
-            <h2 class = "city">Weather in Austin</h2>
-            <h1 class = "temp">68°F</h1>
-            <img src="https://developer.accuweather.com/sites/default/files/07-s.png" alt="clouds" class="icon" />
-            <div class="description">Cloudy</div>
-            <div class="humidity">Humidity: 57%</div>
-            <div class="wind">Wind: 18 m/hr</div>
-            <div class="uvIndex">UV Index</div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar"><h1>Weather Dashboard</h1></div>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" />
+        <button id="searchBtn">search</button>
+      </div>
+      <div class="weather">
+        <h2 class="city">Weather in <span id="city-name"></span></h2>
+        <h1 class="temp"></h1>
+        <img id="weather-icon" src="" class="icon" />
+        <div class="description"></div>
+        <div class="humidity">Humidity: <span id="humid"></span> %</div>
+        <div class="wind">Wind: <span id="wind-speed"></span> m/hr</div>
+        <div class="uvIndex">UV Index: <span id="uv-index"></span></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
+
+
+
+
+
+
+
